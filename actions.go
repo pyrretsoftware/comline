@@ -96,3 +96,9 @@ type RayUpdateAction struct{}
 func (a RayUpdateAction) FormatAction() (string, map[string]string) {
 	return "ray:update", map[string]string{}
 }
+
+type ExtensionsReadAction struct{}
+
+func (a ExtensionsReadAction) FormatAction() (string, map[string]string) {
+	return "extensions:read", map[string]string{}
+}
